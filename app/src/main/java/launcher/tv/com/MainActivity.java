@@ -17,6 +17,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import launcher.tv.com.activitys.BaseActivity;
+import launcher.tv.com.utils.Utils;
 
 public class MainActivity extends BaseActivity {
 
@@ -35,6 +36,7 @@ public class MainActivity extends BaseActivity {
         Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
         mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
 
+        Utils.isOwnApp();
 /*        IntentFilter filter = new IntentFilter();
         filter.addAction("android.intent.action.MAIN");
         filter.addCategory("android.intent.category.HOME");
